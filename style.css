@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+h3 {
+  border-bottom: solid 2px;
+  border-color: gray;
+  font-family: 'Poiret One', cursive;
+  margin-top: 40px;
+  letter-spacing: 3px;
+}
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+button:hover {
+color: #333;
+}
+input[type="text"] {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+  width: 260px;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  width: 160px;
+  padding: 0 0 0 10px;
+}
+li >  input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  color: #CF2323;
+}
+
+/* Completed */
+#completed-item label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+#text-input{
+  display: block;
+}
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
